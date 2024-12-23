@@ -1,0 +1,19 @@
+import { createStore } from "vuex";
+
+export default createStore({
+  state: {
+    //state จะถูกใช้งานก่อน เพราะมันคือที่ที่ข้อมูลถูกเก็บ
+  },
+  getters: {
+    //getters จะถูกใช้หลังจากมี state เพราะมันคำนวณค่าจาก state ให้เป็นข้อมูลที่ต้องการ
+  },
+  mutations: {
+    //mutations จะถูกเรียกใช้เมื่อเราต้องการเปลี่ยนแปลงข้อมูลใน state
+  },
+  actions: {
+    //actions จะถูกเรียกใช้เมื่อเราต้องการทำงานแบบ asynchronous (เช่น เรียก API) และจากนั้นก็จะใช้ commit เพื่อเรียก mutations ให้เปลี่ยนแปลง state
+  },
+  modules: {
+    //modules จะถูกใช้เมื่อแอปพลิเคชันของคุณเริ่มมีขนาดใหญ่และต้องการการจัดระเบียบที่ดีขึ้น
+  },
+});
